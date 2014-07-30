@@ -1,0 +1,1 @@
+min_char_width=20, min_char_height=27, max_width_b4_cutoff=80, max_height_b4_cutoff=120, max_blob_area=2800, min_sub_super_width = 21, min_sub_super_height = 14, max_sub_super_width_b4_cutoff = 66, max_sub_super_height_b4_cutoff = 38, miny_linetop_var=25, range_above_below_line=15, draw_lines=False, lines=[], margin=50, num_lines_on_pecha=8

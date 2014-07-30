@@ -1,0 +1,9 @@
+run the boxing algo
+and get top of lines
+then run the vertical projection code from top of line to another Y pixels down , where Y is the avg line height
+then do that all the way to Y/2
+get the avg of those vertical projections
+the min of that will indicate character boundaries.
+the code fragment to do vpp in C will help
+just to do better character segmenting
+
