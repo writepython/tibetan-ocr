@@ -1,4 +1,7 @@
 #! /usr/bin/env python
+
+# Originally distributed with OpenCV source code
+
 from random import Random
 import colorsys
 

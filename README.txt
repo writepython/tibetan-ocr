@@ -6,7 +6,14 @@ The main script for doing character segmentation is character_segmentation.py.  
 === USAGE ===
 
 1) Edit config.py
-2) python character_segmentation.py.
+2) python character_segmentation.py
+
+=== Dependencies ===
+
+OpenCV - http://opencv.org/
+cvBlobsLib - http://www.eng.auburn.edu/~troppel/internal/sparc/TourBot/TourBot%20References/cvdocuments/cvBlobsLib.html
+NumPy - http://www.numpy.org/
+matplotlib - http://matplotlib.org/
 
 === The Function process_image ===
 
@@ -14,7 +21,7 @@ This function processes each image again and again untill an acceptable result i
 
 This process involves the following steps:
 
-1) Find all the blobs of ink on the page using the class CBlobResult from cvBlobsLib.  http://opencv.willowgarage.com/wiki/cvBlobsLib
+1) Find all the blobs of ink on the page using the class CBlobResult from cvBlobsLib.
 
 2) Determine whether each blob needs to be passed to the vertical projection (vp) or horizontal projection (hp) functions.  Predefined variables like min_char_width, max_width_b4_cutoff, and max_height_b4_cutoff are taken into account.
 
@@ -37,4 +44,3 @@ Start each iteration by calling the function get_blobs_sorted_by_distance_from_p
 5) Write each character blob as an image within the folio_characters_directory with the following as part of its filename: its line number, its character number in the line, and optionally, its dimensions.  Additionally, a bounding box is drawn around it on the original image.
 
 6) Exit
-
